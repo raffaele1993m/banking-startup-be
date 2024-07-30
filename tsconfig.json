@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "commonjs",
+    "module": "CommonJS",
     "rootDir": "./",
     "baseUrl": "src",
-    // "typeRoots": [],                                  
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "outDir": "build",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

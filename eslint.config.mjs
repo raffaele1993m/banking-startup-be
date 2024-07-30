@@ -4,6 +4,7 @@ import tseslint from "typescript-eslint";
 
 
 export default [
+  { ignores: ["**/node_modules/", "**build/"] },
   { files: ["**/*.{js,mjs,cjs,ts}"] },
   { languageOptions: { globals: globals.node } },
   pluginJs.configs.recommended,
@@ -12,7 +13,9 @@ export default [
     rules: {
       semi: "error",
       "prefer-const": "error",
-      "no-unused-vars": "error"
+      "no-unused-vars": "error",
+      "arrow-body-style": "error",
+      "quotes": [2, "double"]
     }
   }
 ];
